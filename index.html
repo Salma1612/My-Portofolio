@@ -32,13 +32,8 @@ overflow-x:hidden;
 a{color:var(--accent);text-decoration:none;font-weight:500;}
 
 header{
-position:fixed;
-top:0;
-width:100%;
-z-index:100;
-display:flex;
-justify-content:space-between;
-align-items:center;
+position:fixed;top:0;width:100%;z-index:100;
+display:flex;justify-content:space-between;align-items:center;
 padding:20px 60px;
 background:rgba(0,0,0,0.55);
 backdrop-filter:blur(14px);
@@ -67,10 +62,8 @@ transition:.35s;
 .meta{color:var(--muted);font-size:.9rem;margin:8px 0 14px;}
 
 .tags span{
-display:inline-block;
-margin:6px 8px 0 0;
-padding:6px 14px;
-border-radius:20px;
+display:inline-block;margin:6px 8px 0 0;
+padding:6px 14px;border-radius:20px;
 background:rgba(255,255,255,.08);
 font-size:.8rem;
 }
@@ -82,24 +75,19 @@ padding:160px 8vw 120px;
 display:flex;
 align-items:center;
 position:relative;
-z-index:1;
 }
 
 .hero video{
-position:absolute;
-inset:0;
-width:100%;
-height:100%;
+position:absolute;inset:0;
+width:100%;height:100%;
 object-fit:cover;
 filter:brightness(.25);
 z-index:-2;
-pointer-events:none; /* ✅ critical fix */
 }
 
 .hero::after{
 content:"";
-position:absolute;
-inset:0;
+position:absolute;inset:0;
 background:linear-gradient(to bottom,transparent,var(--bg));
 z-index:-1;
 }
@@ -110,13 +98,10 @@ grid-template-columns:1fr 1.4fr;
 gap:80px;
 align-items:center;
 width:100%;
-position:relative;
-z-index:5; /* ✅ ensures buttons are clickable */
 }
 
 .hero-img{
-width:260px;
-height:260px;
+width:260px;height:260px;
 border-radius:50%;
 object-fit:cover;
 border:3px solid var(--accent);
@@ -144,26 +129,16 @@ border:1px solid var(--accent);
 color:var(--accent);
 margin:10px 16px 0 0;
 transition:.3s;
-position:relative;
-z-index:10;
 }
-
 .btn:hover{
 background:var(--accent);
 color:#000;
 }
 
-footer{
-text-align:center;
-padding:80px;
-color:var(--muted);
-}
+footer{text-align:center;padding:80px;color:var(--muted);}
 
 @media(max-width:900px){
-.hero-content{
-grid-template-columns:1fr;
-text-align:center;
-}
+.hero-content{grid-template-columns:1fr;text-align:center;}
 .hero-right h1{font-size:3rem;}
 }
 </style>
@@ -183,6 +158,7 @@ text-align:center;
 </nav>
 </header>
 
+<!-- 1. HERO -->
 <section class="hero">
 <video autoplay muted loop playsinline>
 <source src="hero-video.mp4" type="video/mp4">
@@ -197,10 +173,162 @@ text-align:center;
 Building intelligent, explainable AI solutions with real-world impact.</p>
 
 <a class="btn" href="./resume.pdf" download>Resume</a>
-<a class="btn" href="https://github.com/sksalma1612" target="_blank" rel="noopener noreferrer">GitHub</a>
-<a class="btn" href="https://www.linkedin.com/in/sksalma1612" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a class="btn" href="https://www.linkedin.com/in/sksalma1612" target="_blank" rel="noopener">LinkedIn</a>
 <a class="btn" href="mailto:salma.shaik1612@gmail.com">Email</a>
 </div>
+</div>
+</section>
+
+<!-- 2. ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>Computer Science and AI/ML student with strong expertise in machine learning, generative AI, and deep learning. Proficient in core computer science subjects including DSA, DBMS, OS, and OOPs.</p>
+<p>Focused academically on CSE (AI & ML) with hands-on experience in healthcare AI, predictive analytics, and explainable ML systems. Seeking AI/ML-focused roles to build impactful, ethical, and scalable solutions.</p>
+</div>
+</section>
+
+<!-- 3. SKILLS -->
+<section id="skills">
+<h2>Skills</h2>
+<div class="grid">
+<div class="card"><h3>Programming Languages</h3><p>Python, Java</p></div>
+<div class="card"><h3>AI & Machine Learning</h3><p>ML Algorithms, Scikit-learn, XGBoost, Pandas, NumPy</p></div>
+<div class="card"><h3>Deep Learning & GenAI</h3><p>TensorFlow, PyTorch, CNNs, Transfer Learning, GPT-Neo</p></div>
+<div class="card"><h3>Explainable AI</h3><p>SHAP, LIME, Grad-CAM</p></div>
+<div class="card"><h3>Tools & Platforms</h3><p>GitHub, Kubernetes, LaTeX, MS Word, PowerPoint, Canva</p></div>
+<div class="card"><h3>CS Fundamentals</h3><p>DSA, DBMS/SQL, OS, OOPs</p></div>
+</div>
+</section>
+
+<!-- 4. EXPERIENCE -->
+<section id="experience">
+<h2>Work Experience</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Generative AI Intern – SmartBridge (Google Cloud)</h3>
+<div class="meta">July 2025</div>
+<ul>
+<li>Built AI-powered email generator using GPT-Neo and Python.</li>
+<li>Reduced manual drafting time by 35–40%.</li>
+<li>Implemented GitHub-based version control.</li>
+</ul>
+<div class="tags"><span>Python</span><span>GPT-Neo</span><span>Generative AI</span></div>
+</div>
+
+<div class="card">
+<h3>Data Associate L1 – Infotact Solutions</h3>
+<div class="meta">Dec 2025 – Present</div>
+<ul>
+<li>IoT predictive maintenance using ML models.</li>
+<li>Visual quality inspection using ResNet50 & Grad-CAM.</li>
+</ul>
+<div class="tags"><span>XGBoost</span><span>ResNet50</span><span>Grad-CAM</span></div>
+</div>
+
+</div>
+</section>
+
+<!-- 5. PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Email Generator (GPT-Neo)</h3>
+<p>AI-based personalized email generation system reducing drafting effort by 40%.</p>
+<p><strong>Tools:</strong> Python, GPT-Neo</p>
+</div>
+
+<div class="card">
+<h3>Heart Disease Prediction</h3>
+<p>Random Forest achieved 85% accuracy outperforming KNN, SVM, and Naive Bayes.</p>
+</div>
+
+<div class="card">
+<h3>Explainable AI for Healthcare</h3>
+<p>SHAP & LIME used for transparent clinical decision-making.</p>
+</div>
+
+<div class="card">
+<h3>GenPred-WSI</h3>
+<p>Breast cancer mutation prediction with 97% validation accuracy and AUC 0.98.</p>
+</div>
+
+<div class="card">
+<h3>IoT Predictive Maintenance</h3>
+<p>Failure prediction using real-time sensor data.</p>
+</div>
+
+<div class="card">
+<h3>Visual Quality Control System</h3>
+<p>Defect detection using transfer learning and Grad-CAM.</p>
+</div>
+
+</div>
+</section>
+
+<!-- 6. EDUCATION -->
+<section id="education">
+<h2>Education</h2>
+<div class="card">
+<p><strong>B.Tech CSE (AI & ML)</strong> – VIT AP | CGPA: 8.7</p>
+<p>NRI Junior College – MPC (947 / 1000)</p>
+<p>Sresta High School – Secondary Education (591 / 600)</p>
+</div>
+</section>
+
+<!-- 7. CERTIFICATIONS -->
+<section>
+<h2>Certifications</h2>
+<div class="card">
+<ul>
+<li>IBM SkillsBuild – AI & Cloud</li>
+<li>AWS Academy – Cloud Foundations</li>
+<li>AWS Academy – Cloud Architecting</li>
+</ul>
+</div>
+</section>
+
+<!-- 8. VOLUNTEERING -->
+<section>
+<h2>Volunteering & Leadership</h2>
+<div class="card">
+<ul>
+<li>CSI Club – Core & Marketing Team</li>
+<li>Entrepreneurship Club – Wadhwani Ignite Project “Threads”</li>
+</ul>
+</div>
+</section>
+
+<!-- 9. ACHIEVEMENTS -->
+<section>
+<h2>Achievements & Highlights</h2>
+<div class="card">
+<ul>
+<li>97% validation accuracy in deep-learning cancer prediction project</li>
+<li>Reduced email drafting time by 40% during internship</li>
+</ul>
+</div>
+</section>
+
+<!-- 10. LANGUAGES -->
+<section>
+<h2>Languages</h2>
+<div class="card">
+<p>Telugu (Native), English, Hindi, German (Beginner)</p>
+</div>
+</section>
+
+<!-- 11. CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+<p>Email: <a href="mailto:salma.shaik1612@gmail.com">salma.shaik1612@gmail.com</a></p>
+<p>Phone: +91 81253 72847</p>
+<p>Location: Guntur, Andhra Pradesh</p>
+
 </div>
 </section>
 
@@ -212,13 +340,13 @@ gsap.from(sec,{
 opacity:0,
 y:80,
 duration:1,
-scrollTrigger:{
-trigger:sec,
-start:"top 80%"
-}
+scrollTrigger:{trigger:sec,start:"top 80%"}
 });
 });
 </script>
 
 </body>
 </html>
+
+
+fix and regive code
