@@ -3,8 +3,7 @@
 This repository contains the source code for my personal **AI/ML portfolio website**, showcasing my skills, projects, internships, and academic background in **Computer Science and Artificial Intelligence & Machine Learning**.
 
 🔗 **Live Portfolio:**  
-https://sksalma1612.github.io/portfolio/
-
+https://salma1612.github.io/My-Portofolio/
 ---
 
 ## 👩‍💻 About Me
